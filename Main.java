@@ -25,11 +25,31 @@ public class Main {
       // 2. Use an INITIALIZER LIST to set array value
       int[] lusckiestNumber = { 13, 13, 10, 9, 5, 20, 37, 7};
       double[] currentCash = {1.0, 3.25, 15.0, 21.0};
-      String[] bestClass = {"Maia", "Alex", "Zoie", "Paige", "Natalie", "Bryce", "Finny", "Jackson"};
+      
       System.out.println(lusckiestNumber[0]); // first item is at index 0
-      System.out.println(bestClass[5]); //prints Bryce
+      //System.out.println(bestClass[5]); //prints Bryce
       
 
+
+      // HOW TO MODIFY ARRAY ELEMENTS
+      // arrrayNAme[index] =nowValue
+      faveAnimals[0] = "dolphin";
+      faveAnimals[1] = "dog";
+      //Note that the other 6 indices hold NULL
+      System.out.println(faveAnimals[2]);
+
+      // Length is an array attribute/property
+      String[] bestClass = {"Maia", "Alex", "Zoie", "Paige", "Natalie", "Bryce", "Finny", "Jackson"};
+      int numStudents = bestClass.length;
+      System.out.println(numStudents); //8
+      // FINAL DOUBLE is always [length - 1] !!!
+      int lastStudentIndex = bestClass.length - 1; // 7
+      System.out.println(bestClass[lastStudentIndex]);
+
+      // PARREL ARRAY to hold info associated with another array
+      String[] faveFoods = { "Pasta", "" , "Sushi", "Caesar Salad", "Sushi", "Burrito", "I don't know", "Lasagna"};
+      // With parallel arrays, Order MATTERS
+      System.out.println( bestClass[5] + "'s favorite food is " + faveFoods[5]);
 
    }
 }
