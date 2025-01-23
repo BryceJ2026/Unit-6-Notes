@@ -51,5 +51,31 @@ public class Main {
       // With parallel arrays, Order MATTERS
       System.out.println( bestClass[5] + "'s favorite food is " + faveFoods[5]);
 
+
+      // STANDARD FOR LOOP to traverse arrays
+      // Examples START at first index, STOP at final index, CHANGE by 1
+
+      for (int i = 0; i < bestClass.length; i++) {
+         System.out.println ( bestClass [i] + "'s favorite food is " + faveFoods[i]);
+
+      }
+         //With STANDARD FOR LOOPS, you have flexibilty over
+         //the ORDER and WAY you traverse through the array!
+         // Examples: START at final index, STOP at first index, CHANGE by -1
+         int[] countdown = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+         for (int i = countdown.length - 1; i >= 0; i--){
+            System.out.println(countdown[i]);
+
+            if (i == 0){
+               System.out.println("Boom.");
+            }
+         }
+
+
+         for (int i = 0; i < countdown.length; i+=2) {
+            System.out.println("Current index:" + i);
+            System.out.println("Item at index:" + countdown[i]);
+         }
+         
    }
 }
